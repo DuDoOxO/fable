@@ -57,6 +57,8 @@ agents/skills、memory 目錄只綁 ~/fable 專案——不要假設這些存在
   未提交的 GraphQL 修改，且 App 端尚未串接後端 API。
 - **待轉告使用者的安全問題**：zentier-official 根目錄有 GCP service account 金鑰 JSON
   （已於 2026-07-05 口頭回報過；若它還在，再提醒一次并建議移出 repo）。
+- 2026-07-06 新增 `/archmap`（架構圖指令），其黃金範例是 haez/passbye/docs/ARCHITECTURE.md
+  （Fable 5 親筆，備份在 ~/fable/examples/）——執行 /archmap 時先讀範例再動筆，模仿其密度。
 - 同日新增 `~/.claude/commands/`：hard、second-opinion、verify-done、stuck 四個斜線指令，
   是 rules/ 流程的主動觸發版。維護時視同 rules/ 檔案（備份、read-back）。若使用者回報
   斜線指令沒出現，檢查 Claude Code 當前版本的自訂指令機制（commands/ 或 skills/），
