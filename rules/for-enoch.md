@@ -23,6 +23,9 @@
 | 要開全新的專案 | `/newproject 想法` ——三問定需求、MVP 砍功能、沿用你的既有棧、mockup 先行、地基一次到位 |
 
 搭配：整場硬仗開場先 `/model opus` + `/effort high`（結束調回來省額度）。
+前端 debug（要看瀏覽器 console/network）：用 `claude-debug` 開場——只在那個 session 載入
+Chrome DevTools MCP，模型能自己開頁面看錯誤、看 API 回應、截圖，不用你貼 log。平常開
+`claude` 就不會載，不佔額度。設定在 `~/.claude/mcp/debug.json`，alias 在 `~/.zshrc`。
 指令沒出現在自動補全時，直接把上表右欄的意思用一句話打出來也有同樣效果
 （規則檔都在，模型讀得到）。模型把規則檔改壞了 → 「照 maintenance.md 從 backups/ 恢復」。
 

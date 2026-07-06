@@ -57,6 +57,9 @@ agents/skills、memory 目錄只綁 ~/fable 專案——不要假設這些存在
   未提交的 GraphQL 修改，且 App 端尚未串接後端 API。
 - **待轉告使用者的安全問題**：zentier-official 根目錄有 GCP service account 金鑰 JSON
   （已於 2026-07-05 口頭回報過；若它還在，再提醒一次并建議移出 repo）。
+- 2026-07-06 建立按需 MCP 模式：`~/.claude/mcp/debug.json`（chrome-devtools-mcp，實測 v1.5.0 可跑）
+  + `~/.zshrc` 的 `claude-debug` alias。刻意**不**全域註冊 MCP——省 context。使用者用 claude-debug
+  開場的 session，前端 debug/驗證優先用 DevTools 工具自己看 console/network，不要請使用者貼 log。
 - 2026-07-06 新增 `/newproject`（新專案開場協議）：內含使用者的既有技術棧對照表與範例
   repo 清單——棧或範例路徑過時就照 maintenance.md 更新該表。
 - 2026-07-06 新增 `/archmap`（架構圖指令），其黃金範例是 haez/passbye/docs/ARCHITECTURE.md
