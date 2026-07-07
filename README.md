@@ -45,7 +45,7 @@ claude-debug   # = claude --mcp-config ~/.claude/mcp/debug.json
 | `commands/` | `~/.claude/commands/`（上表六個指令） |
 | `mcp/` | `~/.claude/mcp/`（按需 MCP 設定） |
 | `examples/` | /archmap 的黃金範例（Fable 5 親筆，指令要求動筆前先讀它模仿密度） |
-| `memory/` | `~/.claude/projects/-Users-enoch-fable/memory/` |
+| `memory/` | `~/.claude/projects/<本機專案路徑編碼>/memory/`（家目錄 /Users/foo → `-Users-foo-fable`；用 `ls ~/.claude/projects/ \| grep fable` 對出實際目錄） |
 
 （各專案自己的 CLAUDE.md 不在本 repo——它們跟著各專案的 git 走。）
 
